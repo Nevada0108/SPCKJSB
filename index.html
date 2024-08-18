@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <!-- Header -->
+        <div>
+            <div id="head1">
+                <ul>
+                    <li> <img class="diachi"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAyhJREFUSEvFlktIVGEUx/9nHikFGu0KQns4d6YWiQujbJFJczOCKNBVSm2KSILswVxzYRhzZ3ptoiAC6bWSolU5d5CUJCiKHhTNdTKLJIiKolWUzXdiTGO83sc3tuhuz/9/ft/5vu+c7xL+00f/iYuiwZFbxysQ9NeAUQlmBuEt+XyPX26MvSumCDkwMylGYg8R2gFUOQBMAp/KRLUeELHXIjzBSjq5yMe5mwyq9UqWjzMwxHOC27P1hz676V3B4f54CDkaBLBQBjqlYWAsiFzdC7VzzMnnCF5+u6ss4C99CvCSYqB/tYwnv8S8NSOb9/+w8zuClbR+hRgtDtC7AAbyMWI0MGGdrY7pjLkpdlAavMKIrxag+1YDARlANGfUoy8KY6FUYpWfxA0GLbN4BJE/nIkeeWWTa+Z6woZ+BsABS+SjCORqsg2d7+0qUIzuJYTAEwDl0+N82FQ7TsmC8xWttCTYaaodl93OO2zEDwF00qJJm6qmSoEVI/GVwPMLxcFxLHi+RfvqBlb6kgr5hDldQ29MNbZUChw29HEAgUKx+W1ZAM3NOTdw5UBXaenPku8WzXdT1eZKghOj1jby+ajCayxOnvOoBTJiqtqMaWfbTkoq0U/EDYUJCNiXUbXzrmecjreD6bRFkzJVrVGu4rR+Fow2y+X6EoCodppGkfSJKubcIwBllgWfzKjaESlwKJWs9ZF4YFOdSRBNM/s4WUskrhOw2OoR4EhW7bBcODg/ixFDf8lAxGFr7wAYyscYtJXA1bY6wqAZ1ertYo4jM5JKtDKxa9+6nffEolhsGN50dGK0Sm31lChs6PcArPUC2MWZcHU4qrU6eV2fxcmB8AxASZHwT8FxKG4Dx/tHIBXfRUQ9RYDHhUBdtlF76ObxBOfNYUO/AGC3DJyJWoajsWteWinw+oGuwIefJb0Atnkk1E1V6/CC5uNS4IlEvb3+SPnrSwzssE9MF001JrUrxYH/9AdF0vo5Bu0tgAsA3WY0dkzm73LKJ19xASmc0ttAiAPwCVBTVo31yWxvoWZW4IkL1x8PUY7nWMen7AJmDZYFzGqA/GtyN/9vvTILLo1SAFUAAAAASUVORK5CYII=" />
+                        <span>99/26/18 Huỳnh Văn Nghệ-Phường 12-Tân Bình-HCM</span>
+                    </li>
+                    <li><img class="diachi"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAnRJREFUSEvtlktoE1EUhv8z2mRZQQRFfOCiSQRRN1LcqGg6tvgAEUWoC91IQYrQRWai0Ck2zQQEpS7cCWJBFBF8LDqJ0u4suHAhNpNSHwiiIC7qpuQ1R24yEyYSmzQZkk3v7t57zv+dc+65M5fQoUEd4mIN3LbKV5U6mNSvgFkBsNPjCL4ycDMjq/cd3Qo4mJw4BKZZj4FVcpaFAwv96jux6ALrUTDHbMsxjwMYLeuRasqKXg024hqAkgETXcz0KVNewANJfZCYHzoJmbIqOK6MXeDyBt+jpdy1+XNarpkAdj/RfNztu8OgIZf/WF1wyZjx3uoqnlw4euP7auA9b8a3Svl1L0HY/4/fymACphgYtJ1+E6QLaTmSagQeMhJhhvUIwEa7pG6tmmBxvqX6m7JKAWNimEC3AHQBsBg0mumLxEDENQNgpkAycZ3AojElAHmARkxZuRs04o5PfbAQD6USvWxZLwBssmGvcxKd/RxWltzwXSm922fxUwDH7PUfJEln0uHInJjXA1e6WmTsCIemY1uYpGcAeu21b5DohBlWPpREU/oeWPwKwHZ7f65Q5FOLA9FfjkZTYOF8eEZb/zPvvw3GVVssC6bL5avJ4mvkt9cnN/uyI7NHtIK7Ik2DK9kb8fMMPHCBnK1lAi6lZfVxrfNvGSxEe6b1vZLEz8HYUe5a/kQsnZ4/rnz8X9d7Ahbi+2a0Dct5/yQxrEIxO7w4oP1Z6ap5Bm7kPnt6xqsFttzVzQIbAyfb8VtE1JTVeLkp7dGOhwAsPmj2R99WgcUkYOhDAIvP1rZWy1vtT18YPF7z6eMtqL7a2ru6fo08suhYqf8CWaspLnHxY7YAAAAASUVORK5CYII=" /><span>yentinhthuy200108@gmail.com</span>
+                    </li>
+                    <li><img class="diachi"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABJxJREFUSEvFl3toW3UUx7/nd9O0KHZDBdGBdNBH0k0pSKVOwY2O3LaOzfqoTtkQEcWBOpizuenGYllz224Mp3/Mxx+iDHGRbcqwTdJBhwiVVXF0dblxrZs463O4MorN6x65j2DSPJo6Yb//8rvnnM85v98553dCuE6LrhMXSwMHg1LD8qkWMNUQ+HbTaRYzYP2CdrX2NLq60uUGUhbYHRmsY+gKMzoJvLyI8cvMOK47oJ5fr/ywmAMlwfec8N8w53T2A7QNgLSYMft7goB9NBvvPdflTxTTKQp2Das1EDgBYHXGIBhHCRQikZ5ARXLKCTgSyYoaHaKJwO3M9AgAhyFP4NOSxBsn1/f8VgheEFw3MuCW9PSXAN1sGcEw69imtSsXS0W9KqTWpkBvE3GrLfdzKi1apjq6Ly3UywOvPtl3WyotvgGwwhZ+XZMVf5nHDDCTKzIwCPCrttPRCjiaJ+Sdc9k28sDuSOAIM3VZGUt7tDZv70Jo06h/+fx8ZZOxX1UVP3Nmnf/KQhl3SH2DCa+YcMbBaJuyvSjYNdJ/F3SeMAUIn2seZUOhSF3D6loIjJrfdKzT2pVTeXLBoORaNv0FgDUAkkyiJubpnsnI5UTsCqsfANgKYI5J1GcLZhsuCwygYXiggYQ+aSYcc0Br8/XkgRuDfqe+rPJPADcR+FBU9hklVHCVCzaUG8L9xwn8MICLmqyszAdH+lp1Fiet06OO72Xv8P8BdkfU55jxnnl7JNVHPa+dt5POMu+KqM+A8b6VU2JFsWM2Zcu5Y9vrxkhfk87iW+snbdRkr9Eb/u3VDWF1JwGDxqaYjVeW6jrZYGZ+NtbmMx0utMwKSFT+ZQVE22Me78HciEPqDhD2mwLzojq2qftqMWP14YBLgIzsrwCQYqbHYm3ezwrJ1w75qx1S5awVMO/QPL4DC496MxgfmWBduGLt3bFiYGPfHQl0MJMBM1pkiglPxTzKJwt1Vg0FGtMSfWfDnozKypEcsHtkoIV1fczapM1R2ftxKbB51yH1URCCxu1YetwZlX2fZuu5Q4EtTPShnTvNMU/31zlgq9X1/wHgFgIOR2Vly2JgM/Kw+gTDPKlLDkm/d+Gj4A6rQQYeB/Cr5vHeASLOBRsRhNV3ADwP4G8H0g2T8q6fyoKH+rdCiLFMqWR07AZi5IIT4Lc02fdy5ltO57IFo1a284jmUeSMh+U4kCMTDEru6ulTTHjAaA2MVG1M3n2hINi8t7B6GMDT9p3tjcq+3UuGmnYCbwL0kq37riYrL2TbyXud6kf33yoSyXEANXYJ9Goe356y4X6/cLdUHsi8TAC0iiTWnN2gmLVcNGKrVAbrmFNfZQ8CSKVfjD6068dSDlgDhH4IwIO23Ax03F9ogFjK6BMH4xgLGmIdZ6tImuJkyply6CtZSM3E3MqAMfpYsxlhnHR9U7St55dCzpYc9u4O77sxjvReAhvZaNZqGSsB4n5xJdH3n4a9bIDdIr0AOgFUF4FfBnCUUunAYleSV8eLRbN21O/4Pe68L010Z/ZAL0ifPjeWGIffry9mo2Rylat8LXJl/ZO4FkAx3X8A9/XfLvXZQhkAAAAASUVORK5CYII=" />
+                        <span>Giờ làm việc:8:00-21:00</span>
+                    </li>
+                    <li><img class="diachi"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA/FJREFUSEvFlm1oW1UYx//PvTVtWefAD0V0gujW3DQwZBMZm2hHt3tjNvB9yhzDD+LLBxWrrrnZkIguN1tnGeIE9ZtVcB0qCHO9Ke6FFdE5pzLa3NSCKAoiKrpOatLmPHrTZN6b3NvcZULPp+Sc//P/5ZznOc8JYZEGLRIXlw1WRjLbCEIGSd9PLw198eO6vpkgm7l8sGmMAVhfgQkApwk4kNP0Qwv9AF+wks0kIfgZEF6zNP1FPxPFDb4oI8YYt/Bd1sbkb16xdeDrj6fa2outbzNwfzWACC/kVP0lL4Plnw62d/xVXAEhVgN0L4DNAKSKNi9aSr2Tvbt/qo11gVeZA0tmMXuMQbfUQYget9TEG43yFx0xVpQIBwGotpaAXGuosO7rDak/nLEucDibXk9Mds68BjPhgbyqH3YuKlnjYWZaDkGH83f058trzKSYe/eDuK+i/dDS9Ht8wREzcxuDTy6wqxIIcUvVs1WNYhonANxeAZog2mVp+pf2d8U0PgBwd3nnLNbkYrvOXkyfExI+umcVSdI3DY5zRoBXT2pJq2L+H3g+kAVLaydj/ae7Pnn5WmlO/g7AFUwYyqv6Dk/wDaOZZSHBrlz4nPrzlpbcb6/ZxbX0/ExEQHqCCI/M6+mspSXW2J8ipjHEwHYwfrW0RCeIuJJ7t3XYNH4g4DrfXTO+mhOFnql46nytJjJiHGDC0/a8XOLoeDw5YTcYEL9rzwmmmyZjifKJ1l2nSDZ9iJm2+uz0TFuouKm2QqvalaN7I7IQE/M55R25WHKoy0wrEihXzgFha7U468Bh03iIgHc8wJ/z39Km/J39036nUb7T04WjZQjT6/lYYtg1RzjoC67k+RcAISeASO7KqTu/bVB4gZc9W6ZiGnajeNTlQvyspSYHAzs3EHqCox+nu0synXO0PtvmT2lOViY27/zZy/NGc6AzxLPbmOhU9R4vxPZ9JJwV6jA4J3Nrz3is73enaXRk8CpBhTEGIgBKBNqe0xLvNQXuPp7qEMVWuwVeU2OQlxlbxmP6lD1v9/ciZk8AdHON7jFL09/0gy/4HiumYTeBUwDaawwEwG9BUAYS7HooPwj1g3RLS2Q8VxoVi2KmtwD0kdedbxRbXrffc1V/slYb6B9IxMw8yOAhAC2BYPWUVyxVf851PYMaKVlDBWMYwLKgMQ7dBUtNXFnt0/MHcQmj+8i+q7ml9Krz30mQcAZ25zV9T1M7dgZ1jWZulQQPAFgbAPy+pen3NZVjP/NIdt9KwWIjgeP/Vn+vR/V/Nlda0jMVf6rwv4JdZsPDcrRjKlwi6qzOS22FMxMbUheauk4BjrIpySUVV1MEn6BFA/8DOc5rLqnCf04AAAAASUVORK5CYII=" />
+                        <span>Hotline:0969504789</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="head2">
+                <a href=""><img src="./images/OIG1.jpg" alt="" class="HY"></a>
+                <div class="search">
+                    <input type="text" placeholder="Tìm Kiếm">
+                    <button><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoZJREFUSEvllknIjlEUx39fxiwsbAyfKZEhURbfAgspJGxkKoVMoS8lEdlYsUCGIsocKbJgIWxYUTYoylQkUyKFMg/nr/PoerzPc+/71OtbOLv3fc49v3vPPed/bhNtZE1txCUV3BFoAQYBPYDnwAPgGvC5yuZj4H7AVmAq0LkG4ANwBlgDPKlnA2XgFcB2QKeN2SdgGXA45ph9LwLrlKvd6auldy9wCbgLPAQGAEOA8cBSoJ37brCNbkqB1wIvB/b4Yt3jFOBeSbARdv/ngGb3mQ2cjMHz4KHATaCDn24s8CoWBOgNXAH6AO+BwZaJZ2Xr8uALFmCiV6oWP0qAZi4jgevwq1OO2pXMTwV3A1678w5gVR3QzPUEMAd4Cyjet6IY4YlnAKfccTRwtQJ4ZnC/pTFC8Epgp8O6WlW/qwDu71WvpQuAIyknXh+0QvuyNJVsqBPw0b+vBbakgNWP+9yxpwnCiwon7gU89XWzgqv7K1SY6gnARfeYDJyvAJ4GnPV1w4HbKSfuArxxidxvO19SAXwMmAv8cG0vHCD5Pj4NTAe+W3UOcxFJ5auPb7jzARsai1P7WH7SYKVHk0hyOQZ4mUDu68ol2ZQWaHwqe4VWS6sXmQQq1bLH1s+TTBTulMQY5Vrd3X12m8y2xjZbNJ02W1us88WaThoal4PpJDnVVYzzlObjaPMH6z1x5q8ptQtQT8fsiz8IpH6ZlcJjLxDd+TZA7SVxyJu0+JD9udH7d6FNKBVWFB4DZwEE1ZtroL+5NLXuA7cCpcp883D91ub+sFRwLNX574KpQBVfrTnPKv146NQosBghXFWuav9tjQQLIvVTT2tg/JNUR6+m0Scu3MD/B/4JVp9tH2VWMqoAAAAASUVORK5CYII=" /></button>
+                </div>
+                <div class="lienhe">
+                    <div class="icon">
+                        <a href=""><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUtJREFUSEtjZBggwDhA9jIMTYtDV61i/iD1zpD5/3+efwwsnxn+/Xr1lpvlxVmT9N+EQpJsH7senhXIyPB/KgMDgySaJVd32abr0MRi10OzEhgZ/8/HYThtLDY+M5NV5DvDs/8MDCJ0tdjj8HSHfwxM+9EsvcnAyLCN4T/DJwYGxle7bNOmUT2o3Y7MjGf4z7AAyeCX/M8FpVeHhf0lZBmyPMmJy+3wzDRggpqJZMjBXbbpDqRYClJLssWuR2amM/5nmAGz6D8D44HdtmmOw8tit8MzrzEwMGgS4ytGBsblO23TogipJSqoSbKYkaFtp016Nd0t/v+fIXW3XfqcAbD4v8tuu4y9VLEY2RD3Q7NS/zP+n0X3VD1qMd0KkNGgHg1qQgUHTJ6osnqQFCAzJRkZ/6kjlVzvd9pmXCTWp2T7mFQLcKknOaiHvMUA4VW3Hx4ib7sAAAAASUVORK5CYII=" /></a>
+                        <a href=""><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABHxJREFUSEvNlltsFGUUx//n2y2NKCpRYyugxniJJlgpNTHdmWWB7ixCSQ1RNDGikuzO4lur0YQo2UqIJkrsS9OdLYpiYgIGMUCRmQXXzqxApBdDIBKjD0YrmpBUsWKku3N01l6mu7Pb1pfyPc53vvM7tznnEObo0BxxcXWDI6ZWCyHuJs75KkWIyZ+HbX+nB9UL00WyrMdrM501uSr/W2CsA7BwOkVF98Mg9JCNl8sZ4QmOmNo6JuwFcO2Ywj8JGGQgX9EAxjwQ6gFUj8mNMPGTaSl+pPhdCXh9nzb/77/wPYAaBnYLtpPX/3JT/8cbN1aGjmkOZRL+6qpamZnbAZIB/Fx9De451KBedsNLwOFssp2YtoGx1wiqT80yxIhYqWcAIl2O7glbqQyBQwDaDVlNVAQrlvYTgEX5KlFz/JHor7MBO1AG73HeMNPzguxBBn0NYMiQ1cVlwYWC8vudijxvyOr9XtBVJ7oW+fO+FrDdCEEMppPEfMApoojVvYlhf+C8I/BmXY7vViztDwDXXcnhli9WqhfHdU4JdcTU6pnQT0BWl1UnP1OOYmmxf5W8DWBB0dUlgFoNOfZe2Ew9J8imXF6cPR6KnVYszamXuyDspUZgy1lvcLZbZrZNJvSkJbXZrTxiaS/yf9BLTNwhbAwwUEWgB5nQ6nhFhFZdUjvc75SsdgaMpUJw49FA/KQ32Eo1MTgN8AFDjm8YF2rq7VomhDgN4GLOZy//vHHLkFt5k6XdLhgDICwgonpdip0bv1cszclxnQ3Ix2Q1WxlM2G9I6uPjQhFTe50Jr4HRZgTVd7xyH7GSrzDoTQCvGrK6Y+JtVhtgxjIiEdSlqOUJDpvJ1UR0rNhjxUoeAqiZGM16UO3xAq/JJjfYTPtRZLRiaf0A6pkplA7Gej3Ba6yukA2RAfiwIcfXT4Qrm/oUzC1M1JKWYgdnCXZS1ECEVbqkZiqCiXFQD6otk6FObWPidgJe0mV1pxc4bGpbibADRFsNKfaGK8d9AJbD5hXGirg5O497O5dA+M8TcHnUZz9UXFxrv9x1R87ODwLwE+M+92CYUXGFza4Akch6/U6KlXoB4E4AIwB1ENt9NtE8AuqAwu80nxnRdFDd5Y5I2NLOEfAAEz+cluKO94UzpYGM/TYD5RpIxExFmdgJdWkDIW4zpPi7Hk2n0EAEi7qjwegZT/Cjme7Feb/9IwM/pGX1Tq9cOi3TlxePCVCAifPMOCUYn3jN3QQnxIlsrTOVqn05seSzlVFnDpR6/MS+fb7fa4d/K3Qhxm0z2SS8jBv/Fs4mG4jJqeqRGy4svNE9WkvGomJpTrg2A/jIkNWnKyme7k6xkqYzk525npZVR+fEKQGHMtrN8/z4trDuMB2xBW2XAkNfJShhTwdy7icXAdoOcADA8JUc7nVPppLimmwY2rNgvO8C/d/VBwTapMuxD4uNLrvsKb3JIHyiDcxOBxMz8dYlYxPjMDPvdDeNiqEuBqw+1X1r1WjOcykoZ8xolf+b6baXq3uhn2WYZyQ+Zx7/A2Ov9y666LoKAAAAAElFTkSuQmCC" /></a>
+                        <a href=""><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABT5JREFUSEvFln9sU1UUx7/nvbbrBohD/2CEPyTwh6DGqANka8tKaMsPMaACEQOBCGvZIhoi+oeSVGMkEsVEI7QbSkIwIRvxB8NtfXN2a8sgIBMjYVETf8QIJCqIwKBd+47e917Ha9cWJn9w/3rv3nPP59xzzj3nEm7ToNvExS2DffGm1SpzGcA/l0vWYwcdz166mcMUBddFgxarbdL9Q6kzp3rcwXQxZd54uAfAXGOdARyTiLd3OgKflDKgIHh+V3i8XI4oMx4C0C9bk+6ORzf9U0hRHvi6CCFGkrwsUrP+fKF9I8B10Q/G2izWboBnZTcQ4ZvkkG1ej3vd3/lKghyUDscmTiUJ9xIwA6AXGbhbyBHwgyzJ3vba9b/m78sBL/k6XJG6iggDDkPwIoDxmpIScLNSXyxcxRL2g+Ey5gfsZJmdH/thsLC8L1EVATBf28BQ1CRWSHZqBdiThUuWZJ3Z7Z5Y01oidbJEamuno+F7ISd0HUlM3MGg53U4HVCc9cvNBg6DfYnwKmZ8rLuII8l02dIe97prddE9dpsl1TZsUF7MzTEW+xjyK4pzw4nlLS3yxaoLRwFUC52SxDWdtYEjw+HLfnhi4ZeI8Jb4V6/hzi89fuFmbYyAE3YpDn+DWCuQXCogzRLwhbHQjAzRSQBWAB2K079oBNibaHoGzPvEQgaZqd3Ohp+yQo8nPhyX5HS7KfavKU5/UKzP6dtRfkd6zHRI2MiM9caefsXpf0Q3LNQG0GMA0ql0urLH3XjZSDxd1JcIu5nxlRZeprouV32v6bTxrMsA2qs4NqwFkbizOcObaHoPzM+JSZn5vg5X4LQnEd5KjNc1vcCKLqe/NRfct3saZzI/apoYmxWX/13xueBwaI6qUp9OoAM1jjMrgxRU86Hif35v83RJUk/rxvPqLldgnzcR8oBJ0eV5q+IMvJEDNpLhDwCVBHRHnH4tu434ivmxhbLTbIBw+7jMmA5NMdHOiKO+ZXF8Z+UQ5E91GH8UcQb25oANdzcbcRrCYHml4ltzRZ8P7WGmtQCGUmlM6nH7/yx04tHM5RQQXyy8mAmHdK/wJsUVeF985riL6HPFUb90NJBCsjlg0RhsctUACNMAnEulbVPEXRYbPfGmKIHrdJvwcpfLv92sULg0xZY3iWC1Ir3lC2fDhVLGjajV3kRoJZj267lEWxRH/dvic2G0eXLGog7osdZGG9R0ozK38TctjiT3gvGAvg/fWTkztxS8YHfyxsPi0j8I4AqBayPOwLdC34JE6AmVSVQ3e/Y0IhGNpiDkzeOkFZl5xeAFwb5Y+GEmHBPXEcDvlnS6ut3deE6Ld2/zFEjqHlMPHoYJIwBOM8hnTBaFF30I+BLhF5ih3eX/Lv5pqyQvGm5vzOSNh58EYRVAogyWMeM4XS13p2yZjM0ydDDbWAAUhJd8+njj4YMAluhZjr9IkpZFHBtEFRseopVeG6SZ9go+3lbtHxQL+bVdtNQ5tWerzYWnJFi8RMhOn2WzWSvjoG1l5bwtCymWuWKvZMcZABVavrE6O+LaKMJn5F+xnca8qGj/VJ1/53pv1RbOMWMrJ9Fq7mJZVVoFUysOgWmeMddf4zg786ZPbLZJb/jcZLS47JJoFCcY1A1WTxHJAxlb8hd5yNJyHcpHZWvKl/9mG9Xz1sjoVwGsAWC5gbNEYsQxWLEwW3rN8qMCZzcuiO66R7XKT4OxGOAa/V2XN5jaL1kuP3WkZvPVQgb+L7BZka9v9wSVM9VQ+S6AJoAxXiLujzgDnaU8csvgG7u7sMRtA/8LYW8zPf9EUnsAAAAASUVORK5CYII=" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="head3">
+                <a href="">Trang sức</a>
+                <a href="">Đá quý</a>
+                <a href="">Trang sức mệnh</a>
+                <a href="">Vật phẩm phong thủy</a>
+                <a href="">Liên hệ<a>
+                <a href="signup.html">Đăng ký</a>
+                <a href="login.html">Đăng nhập</a>
+            </div>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./images/28d09c808f894cd71598.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./images/da-quy-la-gi-10-loai-da-quy-trang-suc-pho-bien-dep-mat-nhat (10).jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./images/op_Ruby_Mobile.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="./images/Skype_Picture_2023_08_01T02_44_44_487Z.jpeg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Menu -->
+        <div class="menu">
+            <div class="danhmuc-hr">
+                <div class="danhmuc">
+                    <div style="margin-top:8px">DANH MỤC SẢN PHẨM</div>
+                </div>
+                <div style="width: 100%; border-bottom: 2px solid rgb(70, 195, 153);"></div>
+            </div>
+
+            <div id="danhsach">
+                <div class="item">
+                    <a href=""><img
+                            src="./images/diamond-ring-graphic-design-template-vector-illustration-png_269454.jpg"
+                            alt=""></a>
+                    <p style="padding-left: 16px;">Nhẫn</p>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./images/pngtree-cartoon-fashion-bracelet-free-illustration-image_1280980.jpg"
+                            alt=""></a>
+                    <p>Vòng tay</p>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./images/Screenshot 2024-07-21 135751.png" alt=""></a>
+                    <p style="padding-left: 6px;">Bông tai</p>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./images/Screenshot 2024-07-20 210825.png" alt=""></a>
+                    <p style="padding-left: 5px;">Mặt dây <br>chuyền</p>
+                </div>
+                <div class="item">
+                    <a href=""><img src="./images/pngtree-hand-painted-cute-cartoon-little-buddha-png-image_4261889.jpg"
+                            alt=""></a>
+                    <p>Tượng đá</p>
+                </div>
+                <div class="item">
+                    <a href=""><img
+                            src="./images/pngtree-nature-spa-logo-stone-leaf-design-icon-vector-template-isolated-png-image_5155505.jpg"
+                            alt=""></a>
+                    <p>Đồ massage</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nhẫn -->
+        <div class="danhmuc-hr">
+            <div class="danhmuc">
+                <div style="margin-top:8px">NHẪN ĐÁ QUÝ</div>
+            </div>
+            <div style="width: 100%; border-bottom: 2px solid rgb(70, 195, 153);"></div>
+        </div>
+
+        <div class="ring">
+            <div class="sanpham">
+                <img src="./images/z5652581677680_5db9bb18a56a3d6f2ddee65aee6fe9c9.jpg" alt="">
+                <p>Nhẫn hồ ly ruby bọc bạc</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5652582557851_1f0c6375bb53e01c7a547ee211125f77.jpg" alt="">
+                <p>Nhẫn ngà voi chạm rồng</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5652583345346_49a4752b6a717d77dafe28e1bcd6572e.jpg" alt="">
+                <p>Nhẫn ngọc bích chạm <br>hoa mẫu đơn</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5652583944644_8089c84498d79c9b26e46516b143cbe5.jpg" alt="">
+                <p>Nhẫn kim cương <br>moissanite bọc vàng 18k</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5652585281989_0afd6c3b8fba95808031bb4202d50d1b.jpg" alt="">
+                <p>Nhẫn bản ngọc cẩm thạch</p>
+            </div>
+        </div>
+
+        <!-- Mặt dây chuyền -->
+        <div class="danhmuc-hr">
+            <div class="danhmuc">
+                <div style="margin-top:8px">MẶT DÂY CHUYỀN</div>
+            </div>
+            <div style="width: 100%; border-bottom: 2px solid rgb(70, 195, 153);"></div>
+        </div>
+
+        <div class="ring">
+            <div class="sanpham">
+                <img src="./images/z5653878173668_01490ee069b9cdc8481d603a81614380.jpg" alt="">
+                <p style="align-items: center;">Đồng điếu ngọc bích Canada</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653878594802_a495ebd2afcbc2d29fe6f76af876906c.jpg" alt="">
+                <p>Di lặc ngọc cẩm <br>thạch Myanmar</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653879158781_b62ac5e0fa366d7d15b8ea23e3b808fa.jpg" alt="">
+                <p>Cỏ 4 lá ruby may mắn</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653879854560_4403171eda1218f079217b3e117601d9.jpg" alt="">
+                <p>Hoa sen thạch anh <br>tóc vàng</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653881420494_b7f720357a37627c843153d1c5ddebb3.jpg" alt="">
+                <p>Lu thống lam ngọc <br>chạm khắc Kim tiền </p>
+            </div>
+        </div>
+        <!-- Vòng tay -->
+        <div class="danhmuc-hr">
+            <div class="danhmuc">
+                <div style="margin-top:8px">VÒNG TAY</div>
+            </div>
+            <div style="width: 100%; border-bottom: 2px solid rgb(70, 195, 153);"></div>
+        </div>
+
+        <div class="ring">
+            <div class="sanpham">
+                <img src="./images/z5653882085543_0daf350c30c02a2b9ed6bd88fbe5957a.jpg" alt="">
+                <p>Vòng mã não lu thống</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653882377347_83c138b369038e63cb95e914a68e8b29.jpg" alt="">
+                <p>Vòng tay Aquamarin</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653882891592_26979b0a0806d8fd02aaf6a39c248859.jpg" alt="">
+                <p>Vòng ngọc cẩm thạch</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653883243910_b76ce1dc5eb8cb99089ff9e430f9a031.jpg" alt="">
+                <p>Vòng Saphire cắt fancet</p>
+            </div>
+            <div class="sanpham">
+                <img src="./images/z5653883966244_87aa77d64c5e966a244cba7ebc40e902.jpg" alt="">
+                <p>Vòng ngọc bích Canada <br>bản cối</p>
+            </div>
+        </div>
+
+        <!-- Blog-Tin tức -->
+        <div class="danhmuc-hr">
+            <div class="danhmuc">
+                <div style="margin-top:8px">BLOG-TIN TỨC</div>
+            </div>
+            <div style="width: 100%; border-bottom: 2px solid rgb(70, 195, 153);"></div>
+        </div>
+
+        <!-- Thương hiệu -->
+        <div class="brand">
+            <h2 id="title">
+                TRANG SỨC ĐÁ QUÝ HY-THIÊN ĐƯỜNG ĐÁ QUÝ PHONG THỦY
+            </h2>
+            <p>HY là thương hiệu trang sức đá quý phong thủy với các dòng sản phẩm Đá quý – Đá bán quý thiên nhiên và
+                Vật phẩm phong thủy.
+                Đến với cửa hàng , các bạn sẽ tìm được cho mình và người thân những sản phẩm trang sức và thời trang đá
+                quý được thiết kế độc đáo, tinh tế trong những bộ sưu tập về nữ trang được làm từ đá quý thiên nhiên
+                được ưa thích như: Ruby, Saphire, Emeral,Topaz,Garnet, Peridot, Thạch anh,Tourmaline…
+
+            </p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="foot">
+                <div class="foot1">
+                    <img src="./images/OIG1.jpg" alt="">
+                    <ul>
+                        <hr>
+                        <li>Trang sức và đá qusy tự nhiên như Ruby, 
+                            Saphire, Emeral, Topaz, Garnet, Peridot... 
+                            được thiết kế độc đáo, tinh tế dành cho nam và nữ</li>
+                            <hr>
+                        <li>Hotline:0913488855</li>
+                        <hr>
+                        <li>Web: www.trangsucdaquyHY.com</li>
+                        <hr>
+                        <li>Địa chỉ: 100 An Bình, Quận 5, Tp.HCM</li>
+                        <hr>
+                    </ul>
+
+                </div>
+                <div class="foot2">
+                   
+                    <ul> <h2> Về chúng tôi</h2>
+                        <hr>
+                        <li>Giới thiệu</li>
+                        <hr>
+                        <li>Liên hệ</li>
+                        <hr>
+                        <li>Chính sách bảo hành</li>
+                        <hr>
+                        <li>Chính sách vận chuyển</li>
+                    </ul>
+                </div>
+                <div class="foot3">
+                    
+                    <ul><h2>Góc tư vấn</h2>
+                        <hr>
+                        <li>Thiết kế trang sức</li>
+                        <hr>
+                        <li>Gia công đá quý</li>
+                        <hr>
+                        <li>Lựa chọn trang sức cưới</li>
+                        <hr>
+                        <li>Nhận giá báo mẫu</li>
+                    </ul>
+                </div>
+                <div class="foot4">
+                   
+                    <ul> <h2>Hỗ trợ khách hàng</h2>
+                        <hr>
+                        <li>Giá vàng hôm nay</li>
+                        <hr>
+                        <li>Hướng dẫn đo size tay</li>
+                        <hr>
+                        <li><a href="signup.html">Đăng ký</a></li>
+                        <hr>
+                        <li><a href="login.html">Đăng nhập</a></li>
+                        <hr>
+                    </ul>
+                </div>
+            </div>
+        </Footer>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
